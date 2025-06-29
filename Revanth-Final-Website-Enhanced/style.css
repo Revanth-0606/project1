@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h5 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar {
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #00d4ff;
+}
+
+.card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+#digital-clock {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00ffff;
+}
+
+#welcome-banner {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+#comic-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+img.rounded-circle {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #0dcaf0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#contact .card {
+  background-color: #292b2c;
+  color: #f8f9fa;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+a {
+  color: #0dcaf0;
+}
+
+a:hover {
+  color: #00d4ff;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: #222 !important;
+  color: #fff;
+}
