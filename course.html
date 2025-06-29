@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>WAPH Course</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <div class="container py-5">
-    <h1 class="mb-3">Web Application Programming and Hacking</h1>
-    <p>This portfolio showcases the hands-on tasks and projects built in the WAPH course at University of Dayton. It demonstrates knowledge of web security, JavaScript, API integration, and dynamic content rendering.</p>
+    <h1 class="text-center text-primary mb-4">Web Application Programming and Hacking</h1>
+    <h4 class="text-center text-secondary mb-3">Instructor: Dr. Phu Phung</h4>
+    <h5 class="text-center text-info mb-4">University of Dayton</h5>
+
+    <p class="lead text-justify">
+      This portfolio showcases the hands-on tasks, labs, and hackathons completed during the WAPH course. It includes work related to:
+    </p>
+    <ul class="list-group list-group-flush mb-4">
+      <li class="list-group-item">HTTP protocol analysis using Wireshark and telnet</li>
+      <li class="list-group-item">CGI and PHP-based web application development</li>
+      <li class="list-group-item">XSS vulnerability exploitation and defenses</li>
+      <li class="list-group-item">JavaScript DOM manipulation, clocks, and API integrations</li>
+      <li class="list-group-item">Project-based learning and GitHub Pages deployment</li>
+    </ul>
+
+    <!-- Joke API -->
+    <div class="my-4">
+      <h5>Joke of the Minute:</h5>
+      <p id="joke"></p>
+    </div>
+
+    <!-- XKCD Comic -->
+    <div class="my-4">
+      <h5>Random XKCD Comic:</h5>
+      <img id="xkcdComic" src="" alt="XKCD Comic" class="img-fluid">
+    </div>
+
+    <!-- Clocks -->
+    <div class="d-flex justify-content-around my-4">
+      <div>
+        <h6>Digital Clock</h6>
+        <p id="digitalClock" class="fw-bold text-success"></p>
+      </div>
+      <div>
+        <h6>Analog Clock</h6>
+        <canvas id="analogClock" width="150" height="150"></canvas>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
